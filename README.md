@@ -28,6 +28,12 @@
 
 ## 截图
 
+![](https://kerw1n.oss-cn-nanjing.aliyuncs.com/kerw1n/%E5%A4%A9%E6%B0%94%E5%A3%81%E7%BA%B81.png)
+
+![](https://kerw1n.oss-cn-nanjing.aliyuncs.com/kerw1n/%E5%A4%A9%E6%B0%94%E5%A3%81%E7%BA%B82.png)
+
+![](https://kerw1n.oss-cn-nanjing.aliyuncs.com/kerw1n/%E5%A4%A9%E6%B0%94%E5%A3%81%E7%BA%B83.png)
+
 ## 贡献
 
 欢迎任何形式的贡献，包括但不限于错误修复，新功能的建议等。
