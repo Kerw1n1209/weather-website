@@ -54,6 +54,7 @@ setInterval(() => {
 }, 1000)
 
 let weather = {
+  // 获取城市经纬度
   fetchLocation: function (city) {
     fetch(
       'http://api.openweathermap.org/geo/1.0/direct?q=' +
@@ -65,6 +66,7 @@ let weather = {
       .then((data) => this.displayWeather(data))
   },
 
+  // 获取天气数据
   displayWeather: function (data) {
     if (Array.isArray(data) && data.length > 0) {
       latitude = data[0].lat
@@ -85,6 +87,7 @@ let weather = {
     }
   },
 
+  // 搜索城市
   search: function () {
     this.fetchLocation(document.querySelector('.searchbar').value)
   },
@@ -103,6 +106,8 @@ function getWeatherData() {
   //         showWeatherData(data)
   //       })
   //   })
+
+  // 全局操作，点击搜索按钮时触发
   document
     .querySelector('.search button')
     .addEventListener('click', function () {
@@ -119,6 +124,7 @@ function getWeatherData() {
     })
 }
 
+// 显示天气数据
 function showWeatherData(data) {
   let { humidity, pressure, sunrise, sunset, wind_speed } = data.current
   console.log(humidity, pressure, sunrise, sunset, wind_speed)
@@ -155,7 +161,7 @@ function showWeatherData(data) {
         
         
         `
-
+  // 今日天气
   let otherDayForcast = ''
   data.daily.forEach((day, idx) => {
     if (idx == 0) {
